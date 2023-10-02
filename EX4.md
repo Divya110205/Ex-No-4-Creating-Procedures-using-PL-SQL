@@ -33,5 +33,3 @@ CALL insert_employee_data(2, 'Divya', 'TL', 40000.00);
 
 The procedures has been successfully created using PL\SQL.
 
-
-### Result:
