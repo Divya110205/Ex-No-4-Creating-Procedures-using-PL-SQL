@@ -12,12 +12,15 @@
 
 ### Program:
 ```
-CREATE TABLE employee (empid INT PRIMARY KEY,empname VARCHAR(10),dept VARCHAR(10),salary DECIMAL(10, 2));
+CREATE TABLE employee (empid INT PRIMARY KEY,empname VARCHAR(10),
+dept VARCHAR(10),salary DECIMAL(10, 2));
 
 DELIMITER //
-CREATE PROCEDURE insert_employee_data(IN p_empid INT,IN p_empname VARCHAR(10),IN p_dept VARCHAR(10),IN p_salary DECIMAL(10, 2))
+CREATE PROCEDURE insert_employee_data(IN p_empid INT,IN p_empname VARCHAR(10),
+IN p_dept VARCHAR(10),IN p_salary DECIMAL(10, 2))
 BEGIN
-  INSERT INTO employee (empid, empname, dept, salary)VALUES (p_empid, p_empname, p_dept, p_salary);
+  INSERT INTO employee (empid, empname, dept, salary)
+VALUES (p_empid, p_empname, p_dept, p_salary);
 END //
 DELIMITER ;
 
